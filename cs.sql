@@ -15,5 +15,6 @@
 select FullName, Email
 from CUSTOMERS
 where City = N'Hà Nội'
-and LastPurchaseData < '2025-10-01'
+and LastPurchaseDate < '2025-10-01'
+and Email is not null
 and Status = 'Active';
